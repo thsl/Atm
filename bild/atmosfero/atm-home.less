@@ -1,0 +1,177 @@
+#home {
+  .intro-section {
+    position: relative;
+    //min-height: 100%;
+    padding: 140px 0 0 0;
+    color: @white;
+    overflow: hidden;
+    background: url("@{image-path-atm}/backgrounds/bck-imgs-001.jpg") no-repeat center center fixed #19488E;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    .description {
+    }
+  }
+
+  .detalhes-intro {
+    margin-top: 80px;
+    padding: 30px 0;
+    background-color: rgba(0, 133, 186, 0.55);
+    .svg-img {
+      @media (max-width: @screen-sm) {
+        margin-top: 80px;
+      }
+    }
+  }
+  .summit-section {
+    position: relative;
+    height: auto;
+    padding: 115px 0;
+    color: @white;
+    overflow: hidden;
+    background: url("@{image-path-atm}/backgrounds/bck-imgs-summit.jpg") no-repeat center center #F1892D;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .features {
+    &-section {
+      //min-height: 100%;
+      padding: 115px 0;
+      background: #fff;
+      overflow: hidden;
+    }
+    &-list {
+      margin-top: 80px;
+    }
+    &-itens {
+      position: relative;
+      margin: 60px 0;
+      padding: 60px 0;
+      @media (max-width: @screen-md) {
+        margin: 30px 0;
+        padding: 30px 0;
+      }
+    }
+    &-gray {
+      background-color: #F3F3F3;
+      border-top: 1px solid #DFDFDF;
+      border-bottom: 1px solid #DFDFDF;
+    }
+    &-text {
+      padding: 0 40px;
+      margin-top: 50%;
+      @media (max-width: @screen-md) {
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+      }
+    }
+    &-img {
+      img {
+        width: auto;
+        vertical-align: middle;
+        @media (max-width: @screen-md) {
+          max-width: 100%;
+
+        }
+      }
+    }
+  }
+
+  .section-pricing {
+    .table-pricing {
+      font-size: 15px;
+      .table-pricing-item {
+        .list-benefits {
+          @media (max-width: @screen-md-min) {
+            height: 250px;
+            overflow: hidden;
+          }
+        }
+      }
+
+      @media (max-width: @screen-md-min) {
+
+        .gradient-ontopbtn {
+          position: relative;
+          &:after {
+            content: "";
+            left: 0;
+            height: 30px;
+            position: absolute;
+            top: -20px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 40%);
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .why-atm {
+    position: relative;
+    padding: 85px 0;
+    color: @white;
+    overflow: hidden;
+    background-color: #123045;
+    background-image: -ms-radial-gradient(right bottom, ellipse farthest-corner, #2F7CB3 20%, #123045 80%);
+    background-image: -moz-radial-gradient(right bottom, ellipse farthest-corner, #2F7CB3 20%, #123045 80%);
+    background-image: -o-radial-gradient(right bottom, ellipse farthest-corner, #2F7CB3 20%, #123045 80%);
+    background-image: -webkit-gradient(radial, right bottom, 0, right bottom, 572, color-stop(20, #2F7CB3), color-stop(80, #123045));
+    background-image: -webkit-radial-gradient(right bottom, ellipse farthest-corner, #2F7CB3 20%, #123045 80%);
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #2F7CB3 20%, #123045 80%);
+    .list-benefits {
+      li {
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 15px;
+        &:before {
+          color: #fff;
+        }
+        &:last-child {
+          border: 0;
+        }
+      }
+    }
+    .screens {
+      bottom: -50%;
+      top: 0;
+      right: -50%;
+    }
+  }
+  .subscribe {
+    padding: 80px 0;
+    background-color: #F0F0F0;
+
+    .subscribe-form {
+      margin-top: 30px;
+      @media (max-width: @screen-sm) {
+        .input-group {
+          width: 100%;
+        }
+
+        .form-control {
+          float: none;
+          border-radius: 8px;
+          width: 100%;
+        }
+
+        .input-group-btn {
+          display: block;
+          margin-top: 15px;
+          .btn {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

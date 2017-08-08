@@ -1,0 +1,258 @@
+body {
+  font-family: @font-family-galaxy;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media (max-width: @screen-md) {
+    font-size: 15px;
+  }
+}
+
+// Links
+a {
+  color: @link-color-blue;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: @link-hover-color-blue;
+    text-decoration: underline;
+  }
+  &:focus {
+    .tab-focus();
+  }
+  &.nounderline {
+    text-decoration: none !important;
+  }
+}
+
+// tamanhos de fonte do Hs
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6 .h6 {
+  font-family: "Galaxie", "Arial Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.03em;
+  margin: 0;
+  font-weight: 100;
+}
+
+h1, .h1 {
+  font-size: 63px;
+  @media (max-width: @screen-sm-min) {
+    font-size: 53px;
+  }
+}
+
+h2, .h2 {
+  font-size: 53px;
+  @media (max-width: @screen-md) {
+    font-size: 40px;
+  }
+}
+
+h3, .h3 {
+  font-size: 40px;
+  @media (max-width: @screen-md) {
+    font-size: 33px;
+  }
+}
+
+h4, .h4 {
+  font-size: 33px;
+  @media (max-width: @screen-md) {
+    font-size: 25px;
+  }
+}
+
+h5, .h5 {
+  font-size: 25px;
+  @media (max-width: @screen-md) {
+    font-size: 20px;
+  }
+}
+
+h6, .h6 {
+  font-size: 20px;
+  @media (max-width: @screen-md) {
+    font-size: 15px;
+  }
+}
+
+// Fontes especiais
+
+// Fontes especiais
+@font-face {
+  font-family: 'Galaxie';
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Book.eot');
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Book.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Book.woff2') format('woff2'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Book.woff') format('woff'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Book.ttf') format('truetype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Book.svg#GalaxiePolaris-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galaxie';
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BookItalic.eot');
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BookItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BookItalic.woff2') format('woff2'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BookItalic.woff') format('woff'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BookItalic.ttf') format('truetype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BookItalic.svg#GalaxiePolaris-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galaxie';
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Bold.eot');
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Bold.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Bold.woff2') format('woff2'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Bold.woff') format('woff'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Bold.ttf') format('truetype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Bold.svg#GalaxiePolaris-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galaxie';
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BoldItalic.eot');
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BoldItalic.woff2') format('woff2'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BoldItalic.woff') format('woff'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BoldItalic.ttf') format('truetype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-BoldItalic.svg#GalaxiePolaris-BoldItalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galaxie';
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-LightItalic.eot');
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-LightItalic.woff2') format('woff2'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-LightItalic.woff') format('woff'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-LightItalic.ttf') format('truetype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-LightItalic.svg#GalaxiePolaris-LightItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galaxie';
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Light.eot');
+  src: url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Light.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Light.woff2') format('woff2'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Light.woff') format('woff'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Light.ttf') format('truetype'),
+  url('@{font-path}/@{galaxie-font-path}/GalaxiePolaris-Light.svg#GalaxiePolaris-Light') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+// Icones
+
+@font-face {
+  font-family: "Ionicons";
+  src: url('@{font-path}/@{ionicons-font-path}/ionicons.eot?v=2.0.0');
+  src: url('@{font-path}/@{ionicons-font-path}/ionicons.eot?v=2.0.0#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{ionicons-font-path}/ionicons.ttf?v=2.0.0') format('truetype'),
+  url('@{font-path}/@{ionicons-font-path}/ionicons.woff?v=2.0.0') format('woff'),
+  url('@{font-path}/@{ionicons-font-path}/ionicons.svg?v=2.0.0#Ionicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.eot');
+  src: url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.woff2') format('woff2'),
+  url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.woff') format('woff'),
+  url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
+}
+
+// Open Sans
+/*
+@font-face {
+  font-family: 'opensans';
+  src: url('@{font-path}/@{opensans-font-path}/opensans_regular/OpenSans-Regular-webfont.eot');
+  src: url('@{font-path}/@{opensans-font-path}/opensans_regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{opensans-font-path}/opensans_regular/OpenSans-Regular-webfont.woff') format('woff'),
+  url('@{font-path}/@{opensans-font-path}/opensans_regular/OpenSans-Regular-webfont.ttf') format('truetype'),
+  url('@{font-path}/@{opensans-font-path}/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url('@{font-path}/@{opensans-font-path}/opensans_italic/OpenSans-Italic-webfont.eot');
+  src: url('@{font-path}/@{opensans-font-path}/opensans_italic/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{opensans-font-path}/opensans_italic/OpenSans-Italic-webfont.woff') format('woff'),
+  url('@{font-path}/@{opensans-font-path}/opensans_italic/OpenSans-Italic-webfont.ttf') format('truetype'),
+  url('@{font-path}/@{opensans-font-path}/opensans_italic/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+  font-weight: normal;
+  font-style: italic
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url('@{font-path}/@{opensans-font-path}/opensans_bold/OpenSans-Bold-webfont.eot');
+  src: url('@{font-path}/@{opensans-font-path}/opensans_bold/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{opensans-font-path}/opensans_bold/OpenSans-Bold-webfont.woff') format('woff'),
+  url('@{font-path}/@{opensans-font-path}/opensans_bold/OpenSans-Bold-webfont.ttf') format('truetype'),
+  url('@{font-path}/@{opensans-font-path}/opensans_bold/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url('@{font-path}/@{opensans-font-path}/opensans_bolditalic/OpenSans-BoldItalic-webfont.eot');
+  src: url('@{font-path}/@{opensans-font-path}/opensans_bolditalic/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{opensans-font-path}/opensans_bolditalic/OpenSans-BoldItalic-webfont.woff') format('woff'),
+  url('@{font-path}/@{opensans-font-path}/opensans_bolditalic/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+  url('@{font-path}/@{opensans-font-path}/opensans_bolditalic/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic') format('svg');
+  font-weight: 700;
+  font-style: italic
+}
+*/
+// Montserrat
+/*
+@font-face {
+  font-family: 'montserrat';
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.eot');
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.woff2') format('woff2'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.woff') format('woff'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.ttf') format('truetype'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.eot');
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.woff2') format('woff2'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.woff') format('woff'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.ttf') format('truetype'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.svg#montserratlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+*/
